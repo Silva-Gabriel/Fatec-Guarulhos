@@ -1,0 +1,13 @@
+C:\testCsharp\bin\Debug\netcoreapp3.1\TestCsharp.exe
+C:\testCsharp\bin\Debug\netcoreapp3.1\TestCsharp.deps.json
+C:\testCsharp\bin\Debug\netcoreapp3.1\TestCsharp.runtimeconfig.json
+C:\testCsharp\bin\Debug\netcoreapp3.1\TestCsharp.runtimeconfig.dev.json
+C:\testCsharp\bin\Debug\netcoreapp3.1\TestCsharp.dll
+C:\testCsharp\bin\Debug\netcoreapp3.1\TestCsharp.pdb
+C:\testCsharp\obj\Debug\netcoreapp3.1\TestCsharp.csprojAssemblyReference.cache
+C:\testCsharp\obj\Debug\netcoreapp3.1\TestCsharp.AssemblyInfoInputs.cache
+C:\testCsharp\obj\Debug\netcoreapp3.1\TestCsharp.AssemblyInfo.cs
+C:\testCsharp\obj\Debug\netcoreapp3.1\TestCsharp.csproj.CoreCompileInputs.cache
+C:\testCsharp\obj\Debug\netcoreapp3.1\TestCsharp.dll
+C:\testCsharp\obj\Debug\netcoreapp3.1\TestCsharp.pdb
+C:\testCsharp\obj\Debug\netcoreapp3.1\TestCsharp.genruntimeconfig.cache
