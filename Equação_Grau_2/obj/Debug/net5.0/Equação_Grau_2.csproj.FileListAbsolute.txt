@@ -1,0 +1,16 @@
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\obj\Debug\net5.0\Equação_Grau_2.csprojAssemblyReference.cache
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\obj\Debug\net5.0\Equação_Grau_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\obj\Debug\net5.0\Equação_Grau_2.AssemblyInfoInputs.cache
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\obj\Debug\net5.0\Equação_Grau_2.AssemblyInfo.cs
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\obj\Debug\net5.0\Equação_Grau_2.csproj.CoreCompileInputs.cache
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\bin\Debug\net5.0\Equação_Grau_2.exe
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\bin\Debug\net5.0\Equação_Grau_2.deps.json
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\bin\Debug\net5.0\Equação_Grau_2.runtimeconfig.json
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\bin\Debug\net5.0\Equação_Grau_2.runtimeconfig.dev.json
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\bin\Debug\net5.0\Equação_Grau_2.dll
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\bin\Debug\net5.0\ref\Equação_Grau_2.dll
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\bin\Debug\net5.0\Equação_Grau_2.pdb
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\obj\Debug\net5.0\Equação_Grau_2.dll
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\obj\Debug\net5.0\ref\Equação_Grau_2.dll
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\obj\Debug\net5.0\Equação_Grau_2.pdb
+C:\Fatec\Fatec-Guarulhos\Equação_Grau_2\obj\Debug\net5.0\Equação_Grau_2.genruntimeconfig.cache

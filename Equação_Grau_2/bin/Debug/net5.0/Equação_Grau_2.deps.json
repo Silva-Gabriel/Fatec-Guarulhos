@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Equação_Grau_2/1.0.0": {
+        "runtime": {
+          "Equação_Grau_2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Equação_Grau_2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
