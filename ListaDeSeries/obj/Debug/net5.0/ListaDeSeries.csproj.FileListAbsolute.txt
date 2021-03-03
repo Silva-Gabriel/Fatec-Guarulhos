@@ -1,0 +1,16 @@
+C:\Fatec\ListaDeSeries\obj\Debug\net5.0\ListaDeSeries.csprojAssemblyReference.cache
+C:\Fatec\ListaDeSeries\obj\Debug\net5.0\ListaDeSeries.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fatec\ListaDeSeries\obj\Debug\net5.0\ListaDeSeries.AssemblyInfoInputs.cache
+C:\Fatec\ListaDeSeries\obj\Debug\net5.0\ListaDeSeries.AssemblyInfo.cs
+C:\Fatec\ListaDeSeries\obj\Debug\net5.0\ListaDeSeries.csproj.CoreCompileInputs.cache
+C:\Fatec\ListaDeSeries\bin\Debug\net5.0\ListaDeSeries.exe
+C:\Fatec\ListaDeSeries\bin\Debug\net5.0\ListaDeSeries.deps.json
+C:\Fatec\ListaDeSeries\bin\Debug\net5.0\ListaDeSeries.runtimeconfig.json
+C:\Fatec\ListaDeSeries\bin\Debug\net5.0\ListaDeSeries.runtimeconfig.dev.json
+C:\Fatec\ListaDeSeries\bin\Debug\net5.0\ListaDeSeries.dll
+C:\Fatec\ListaDeSeries\bin\Debug\net5.0\ref\ListaDeSeries.dll
+C:\Fatec\ListaDeSeries\bin\Debug\net5.0\ListaDeSeries.pdb
+C:\Fatec\ListaDeSeries\obj\Debug\net5.0\ListaDeSeries.dll
+C:\Fatec\ListaDeSeries\obj\Debug\net5.0\ref\ListaDeSeries.dll
+C:\Fatec\ListaDeSeries\obj\Debug\net5.0\ListaDeSeries.pdb
+C:\Fatec\ListaDeSeries\obj\Debug\net5.0\ListaDeSeries.genruntimeconfig.cache
