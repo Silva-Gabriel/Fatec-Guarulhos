@@ -73,9 +73,9 @@ namespace CalculadoraInterativa
             this.panel1.Controls.Add(this.Modulo);
             this.panel1.Controls.Add(this.Separador);
             this.panel1.Controls.Add(this.Zero);
-            this.panel1.Location = new System.Drawing.Point(9, 348);
+            this.panel1.Location = new System.Drawing.Point(4, 348);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(262, 50);
+            this.panel1.Size = new System.Drawing.Size(267, 50);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -85,9 +85,9 @@ namespace CalculadoraInterativa
             this.Modulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Modulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Modulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Modulo.Location = new System.Drawing.Point(0, 0);
+            this.Modulo.Location = new System.Drawing.Point(3, 0);
             this.Modulo.Name = "Modulo";
-            this.Modulo.Size = new System.Drawing.Size(85, 50);
+            this.Modulo.Size = new System.Drawing.Size(84, 50);
             this.Modulo.TabIndex = 0;
             this.Modulo.Text = "%";
             this.Modulo.UseVisualStyleBackColor = false;
@@ -97,11 +97,11 @@ namespace CalculadoraInterativa
             // 
             this.Separador.BackColor = System.Drawing.Color.White;
             this.Separador.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Separador.Location = new System.Drawing.Point(174, 0);
+            this.Separador.Location = new System.Drawing.Point(179, 0);
             this.Separador.Name = "Separador";
             this.Separador.Size = new System.Drawing.Size(85, 50);
             this.Separador.TabIndex = 1;
-            this.Separador.Text = ",";
+            this.Separador.Text = ".";
             this.Separador.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Separador.UseVisualStyleBackColor = false;
             this.Separador.Click += new System.EventHandler(this.Separador_Click);
@@ -114,7 +114,7 @@ namespace CalculadoraInterativa
             this.Zero.BackColor = System.Drawing.Color.White;
             this.Zero.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Zero.ForeColor = System.Drawing.Color.Red;
-            this.Zero.Location = new System.Drawing.Point(86, 0);
+            this.Zero.Location = new System.Drawing.Point(91, 0);
             this.Zero.Name = "Zero";
             this.Zero.Size = new System.Drawing.Size(85, 50);
             this.Zero.TabIndex = 0;
@@ -242,9 +242,9 @@ namespace CalculadoraInterativa
             this.panel4.Controls.Add(this.Nove);
             this.panel4.Controls.Add(this.Oito);
             this.panel4.Controls.Add(this.Sete);
-            this.panel4.Location = new System.Drawing.Point(1, 161);
+            this.panel4.Location = new System.Drawing.Point(1, 168);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(270, 57);
+            this.panel4.Size = new System.Drawing.Size(270, 50);
             this.panel4.TabIndex = 5;
             // 
             // Nove
@@ -252,7 +252,7 @@ namespace CalculadoraInterativa
             this.Nove.BackColor = System.Drawing.Color.White;
             this.Nove.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nove.ForeColor = System.Drawing.Color.Red;
-            this.Nove.Location = new System.Drawing.Point(182, 7);
+            this.Nove.Location = new System.Drawing.Point(182, 0);
             this.Nove.Name = "Nove";
             this.Nove.Size = new System.Drawing.Size(85, 50);
             this.Nove.TabIndex = 2;
@@ -265,7 +265,7 @@ namespace CalculadoraInterativa
             this.Oito.BackColor = System.Drawing.Color.White;
             this.Oito.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Oito.ForeColor = System.Drawing.Color.Red;
-            this.Oito.Location = new System.Drawing.Point(94, 7);
+            this.Oito.Location = new System.Drawing.Point(94, -1);
             this.Oito.Name = "Oito";
             this.Oito.Size = new System.Drawing.Size(85, 50);
             this.Oito.TabIndex = 1;
@@ -278,7 +278,7 @@ namespace CalculadoraInterativa
             this.Sete.BackColor = System.Drawing.Color.White;
             this.Sete.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sete.ForeColor = System.Drawing.Color.Red;
-            this.Sete.Location = new System.Drawing.Point(5, 7);
+            this.Sete.Location = new System.Drawing.Point(6, -1);
             this.Sete.Name = "Sete";
             this.Sete.Size = new System.Drawing.Size(85, 50);
             this.Sete.TabIndex = 0;
@@ -365,7 +365,7 @@ namespace CalculadoraInterativa
             this.panel6.Controls.Add(this.Dividir);
             this.panel6.Location = new System.Drawing.Point(4, 103);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(379, 52);
+            this.panel6.Size = new System.Drawing.Size(379, 59);
             this.panel6.TabIndex = 7;
             // 
             // Clear
@@ -374,7 +374,7 @@ namespace CalculadoraInterativa
             this.Clear.BackgroundImage = global::CalculadoraInterativa.Properties.Resources.gui_eraser_icon_157160;
             this.Clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Clear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear.Location = new System.Drawing.Point(0, 3);
+            this.Clear.Location = new System.Drawing.Point(0, 10);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(176, 49);
             this.Clear.TabIndex = 2;
@@ -390,7 +390,7 @@ namespace CalculadoraInterativa
             this.ElevarAoQuadrado.FlatAppearance.BorderSize = 0;
             this.ElevarAoQuadrado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ElevarAoQuadrado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ElevarAoQuadrado.Location = new System.Drawing.Point(179, 3);
+            this.ElevarAoQuadrado.Location = new System.Drawing.Point(179, 9);
             this.ElevarAoQuadrado.Name = "ElevarAoQuadrado";
             this.ElevarAoQuadrado.Size = new System.Drawing.Size(85, 50);
             this.ElevarAoQuadrado.TabIndex = 0;
@@ -405,7 +405,7 @@ namespace CalculadoraInterativa
             this.Dividir.FlatAppearance.BorderSize = 0;
             this.Dividir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Dividir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dividir.Location = new System.Drawing.Point(270, 3);
+            this.Dividir.Location = new System.Drawing.Point(270, 10);
             this.Dividir.Name = "Dividir";
             this.Dividir.Size = new System.Drawing.Size(85, 50);
             this.Dividir.TabIndex = 0;
