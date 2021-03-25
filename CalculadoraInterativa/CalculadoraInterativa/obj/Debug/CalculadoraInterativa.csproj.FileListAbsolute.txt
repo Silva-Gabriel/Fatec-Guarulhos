@@ -1,0 +1,10 @@
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\bin\Debug\CalculadoraInterativa.exe.config
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\bin\Debug\CalculadoraInterativa.exe
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\bin\Debug\CalculadoraInterativa.pdb
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\obj\Debug\CalculadoraInterativa.csprojAssemblyReference.cache
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\obj\Debug\CalculadoraInterativa.Calculadora.resources
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\obj\Debug\CalculadoraInterativa.Properties.Resources.resources
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\obj\Debug\CalculadoraInterativa.csproj.GenerateResource.cache
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\obj\Debug\CalculadoraInterativa.csproj.CoreCompileInputs.cache
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\obj\Debug\CalculadoraInterativa.exe
+C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\obj\Debug\CalculadoraInterativa.pdb
