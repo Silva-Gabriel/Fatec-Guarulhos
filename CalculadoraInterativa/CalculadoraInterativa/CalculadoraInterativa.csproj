@@ -48,12 +48,14 @@
   <ItemGroup>
     <Compile Include="Dividindo.cs" />
     <Compile Include="divisao.cs" />
+    <Compile Include="Fatorial.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="JogoAdivinha.cs" />
     <Compile Include="Modulo.cs" />
     <Compile Include="Multiplicacao.cs" />
     <Compile Include="Potenciacao.cs" />
