@@ -31,9 +31,9 @@ namespace TestCsharp
                     break;
                 case 4:
                     Console.WriteLine($"{a}%{b} = {modulo}");
-                    break;
-                    
+                    break;   
             }
+            Console.ReadLine();
 
         }
     }

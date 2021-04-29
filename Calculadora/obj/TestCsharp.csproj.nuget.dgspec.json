@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\testCsharp\\TestCsharp.csproj": {}
+    "C:\\Fatec\\Fatec-Guarulhos\\Calculadora\\TestCsharp.csproj": {}
   },
   "projects": {
-    "C:\\testCsharp\\TestCsharp.csproj": {
+    "C:\\Fatec\\Fatec-Guarulhos\\Calculadora\\TestCsharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\testCsharp\\TestCsharp.csproj",
+        "projectUniqueName": "C:\\Fatec\\Fatec-Guarulhos\\Calculadora\\TestCsharp.csproj",
         "projectName": "TestCsharp",
-        "projectPath": "C:\\testCsharp\\TestCsharp.csproj",
+        "projectPath": "C:\\Fatec\\Fatec-Guarulhos\\Calculadora\\TestCsharp.csproj",
         "packagesPath": "C:\\Users\\GABRIELDASILVASANTAN\\.nuget\\packages\\",
-        "outputPath": "C:\\testCsharp\\obj\\",
+        "outputPath": "C:\\Fatec\\Fatec-Guarulhos\\Calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

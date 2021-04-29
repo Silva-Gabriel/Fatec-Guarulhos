@@ -409,7 +409,7 @@ namespace CalculadoraInterativa
             this.panel6.Controls.Add(this.Clear);
             this.panel6.Location = new System.Drawing.Point(17, 170);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(153, 62);
+            this.panel6.Size = new System.Drawing.Size(147, 62);
             this.panel6.TabIndex = 7;
             // 
             // Clear
