@@ -34,7 +34,7 @@ namespace IntegracaoBD
             this.salvar = new System.Windows.Forms.Button();
             this.atualizar = new System.Windows.Forms.Button();
             this.Excluir = new System.Windows.Forms.Button();
-            this.Cancelar = new System.Windows.Forms.Button();
+            this.consultar = new System.Windows.Forms.Button();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.txtsobrenome = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
@@ -97,17 +97,17 @@ namespace IntegracaoBD
             this.Excluir.UseVisualStyleBackColor = false;
             this.Excluir.Click += new System.EventHandler(this.Excluir_Click);
             // 
-            // Cancelar
+            // consultar
             // 
-            this.Cancelar.BackColor = System.Drawing.Color.White;
-            this.Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Cancelar.Location = new System.Drawing.Point(336, 274);
-            this.Cancelar.Name = "Cancelar";
-            this.Cancelar.Size = new System.Drawing.Size(87, 33);
-            this.Cancelar.TabIndex = 14;
-            this.Cancelar.Text = "Cancelar";
-            this.Cancelar.UseVisualStyleBackColor = false;
-            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
+            this.consultar.BackColor = System.Drawing.Color.White;
+            this.consultar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.consultar.Location = new System.Drawing.Point(336, 274);
+            this.consultar.Name = "consultar";
+            this.consultar.Size = new System.Drawing.Size(87, 33);
+            this.consultar.TabIndex = 14;
+            this.consultar.Text = "Consultar";
+            this.consultar.UseVisualStyleBackColor = false;
+            this.consultar.Click += new System.EventHandler(this.Consultar_click);
             // 
             // txtnome
             // 
@@ -267,7 +267,7 @@ namespace IntegracaoBD
             this.ClientSize = new System.Drawing.Size(435, 319);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Cancelar);
+            this.Controls.Add(this.consultar);
             this.Controls.Add(this.Excluir);
             this.Controls.Add(this.atualizar);
             this.Controls.Add(this.salvar);
@@ -290,7 +290,7 @@ namespace IntegracaoBD
         private System.Windows.Forms.Button salvar;
         private System.Windows.Forms.Button atualizar;
         private System.Windows.Forms.Button Excluir;
-        private System.Windows.Forms.Button Cancelar;
+        private System.Windows.Forms.Button consultar;
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.TextBox txtsobrenome;
         private System.Windows.Forms.TextBox txtemail;

@@ -50,7 +50,7 @@ namespace IntegracaoBD
         {
         }
 
-        public bool VerificaCPF(string CPF) 
+        public bool VerificaCPF(string CPF)
         {
             string pasta = Application.StartupPath + @"/BD/BDusers.mdb";
             string StrConexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + pasta;
@@ -58,12 +58,12 @@ namespace IntegracaoBD
 
             OleDbConnection conectar = new OleDbConnection(StrConexao);
             OleDbCommand command = new OleDbCommand(SQL, conectar);
-            command.Parameters.AddWithValue("@CPF",CPF);
+            command.Parameters.AddWithValue("@CPF", CPF);
             conectar.Open();
 
             var resultado = command.ExecuteScalar();
 
-            if (resultado != null) 
+            if (resultado != null)
             {
                 return (int)resultado > 0;
             }
@@ -76,36 +76,47 @@ namespace IntegracaoBD
             {
                 if (VerificaCPF(txtcpf.Text) == false)
                 {
-                    string pasta = Application.StartupPath + @"/BD/BDusers.mdb";
+                    if (txtnome.Text == "" || txtsobrenome.Text == "" || txtemail.Text == "" || txtcelular.Text == "")
+                    {
+                        MessageBox.Show("Todos os campos devem ser preenchidos", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (txtnome.Text != "" || txtsobrenome.Text != "" || txtemail.Text != "" || txtcelular.Text != "")
+                    {
+                        string pasta = Application.StartupPath + @"/BD/BDusers.mdb";
 
-                    string StrConexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + pasta;
+                        string StrConexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + pasta;
 
-                    OleDbConnection conectar = new OleDbConnection(StrConexao);
+                        OleDbConnection conectar = new OleDbConnection(StrConexao);
 
-                    //Abre a conexão
-                    conectar.Open();
+                        //Abre a conexão
+                        conectar.Open();
 
-                    // Monta string SQL para a tabela Clientes
-                    String SQL;
-                    SQL = "Insert Into Clientes (nome, sobrenome,datanascimento, telefone, email, CPF) Values ";
-                    SQL += "('" + txtnome.Text + "','" + txtsobrenome.Text + "','" + nascimento.Value + "','" + txtcelular.Text + "','" + txtemail.Text + "','" + txtcpf.Text + "')";
+                        // Monta string SQL para a tabela Clientes
+                        String SQL;
+                        SQL = "Insert Into Clientes (nome, sobrenome,datanascimento, telefone, email, CPF) Values ";
+                        SQL += "('" + txtnome.Text + "','" + txtsobrenome.Text + "','" + nascimento.Value + "','" + txtcelular.Text + "','" + txtemail.Text + "','" + txtcpf.Text + "')";
 
-                    // Cria o comando do SQL na conexão aberta
-                    OleDbCommand comando = new OleDbCommand(SQL, conectar);
+                        // Cria o comando do SQL na conexão aberta
+                        OleDbCommand comando = new OleDbCommand(SQL, conectar);
 
-                    // Médodo para executar o comando SQL que não retorna dados.
-                    comando.ExecuteNonQuery();
+                        // Médodo para executar o comando SQL que não retorna dados.
+                        comando.ExecuteNonQuery();
 
-                    MessageBox.Show("Dados gravados com sucesso");
-                    // Limpa os dados em tela.
-                    txtnome.Clear();
-                    txtsobrenome.Clear();
-                    txtcelular.Clear();
-                    txtcpf.Clear();
+                        MessageBox.Show("Dados gravados com sucesso");
+                        // Limpa os dados em tela.
+                        txtnome.Clear();
+                        txtsobrenome.Clear();
+                        txtcelular.Clear();
+                        txtcpf.Clear();
+                        txtemail.Clear();
+                        masculino.Checked = false;
+                        feminino.Checked = false;
+                        outro.Checked = false;
 
-                    conectar.Close();
+                        conectar.Close();
+                    }
                 }
-                else 
+                else
                 {
                     MessageBox.Show("CPF já cadastrado!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -138,25 +149,43 @@ namespace IntegracaoBD
                     OleDbCommand comando = new OleDbCommand();
                     comando.Connection = conectar;
 
-
-                    string cons = "UPDATE Clientes SET sobrenome = '" + txtsobrenome.Text +
-                                          "',telefone = '" + txtcelular.Text +
-                                          "',email = '" + txtemail.Text +
+                    if (txtsobrenome.Text != "")
+                    {
+                        string cons = "UPDATE Clientes SET sobrenome = '" + txtsobrenome.Text +
+                                                                       "+'WHERE CPF = '" + txtcpf.Text + "'";
+                        comando.CommandText = cons;
+                    }
+                    else if (txtemail.Text != "")
+                    {
+                        string cons = "UPDATE Clientes SET sobrenome = '" + txtsobrenome.Text +
+                                          "',telefone = '" + txtemail.Text +
                                           "+'WHERE CPF = '" + txtcpf.Text + "'";
-
-                    comando.CommandText = cons;
-
+                        comando.CommandText = cons;
+                    }
+                    else if (txtcelular.Text != "") 
+                    {
+                        string cons = "UPDATE Clientes SET sobrenome = '" + txtsobrenome.Text +
+                                              "',telefone = '" + txtcelular.Text +
+                                              "',email = '" + txtemail.Text +
+                                              "+'WHERE CPF = '" + txtcpf.Text + "'";
+                        comando.CommandText = cons;
+                    }
                     // Médodo para executar o comando SQL que não retorna dados.
                     comando.ExecuteNonQuery();
 
-                    MessageBox.Show("Dados alterados com sucesso","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Dados alterados com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     conectar.Dispose();
+
                     txtnome.Clear();
                     txtsobrenome.Clear();
                     txtcelular.Clear();
                     txtcpf.Clear();
+                    txtemail.Clear();
+                    masculino.Checked = false;
+                    feminino.Checked = false;
+                    outro.Checked = false;
                 }
-                else 
+                else
                 {
                     MessageBox.Show("Não foi possível encontrar o CPF no banco de dados!", "Erro na atualização", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -171,7 +200,7 @@ namespace IntegracaoBD
 
         private void Excluir_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
                 if (VerificaCPF(txtcpf.Text) == true)
@@ -198,12 +227,16 @@ namespace IntegracaoBD
                     // Médodo para executar o comando SQL que não retorna dados.
                     comando.ExecuteNonQuery();
 
-                    MessageBox.Show("Dados excluidos com sucesso","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Dados excluidos com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // Limpa os dados em tela.
                     txtnome.Clear();
                     txtsobrenome.Clear();
                     txtcelular.Clear();
                     txtcpf.Clear();
+                    txtemail.Clear();
+                    masculino.Checked = false;
+                    feminino.Checked = false;
+                    outro.Checked = false;
 
                     //FEcha a conexão com o Banco de dados
                     conectar.Dispose();
@@ -221,54 +254,9 @@ namespace IntegracaoBD
             }
         }
 
-        private void Cancelar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Monta o caminho até o arquivo de Banco de dados
-                string pasta = Application.StartupPath + @"/BD/BDusers.mdb";
-                // Monta a string de conexão com o Banco de dados Access
-                string StrConexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + pasta;
-                // Executa a conexão com o Banco de dados
-                OleDbConnection conectar = new OleDbConnection(StrConexao);
-
-                string procura = "SELECT * FROM Clientes";
-
-                if (txtcpf.Text != "")
-                {
-                    procura = "SELECT * FROM Clientes WHERE CPF LIKE '" + txtcpf.Text + "'";
-                }
-
-                DataTable dados = new DataTable();
-
-                OleDbDataAdapter adpt = new OleDbDataAdapter(procura, conectar);
-
-                //Abre a conexão
-                conectar.Open();
-
-                adpt.Fill(dados);
-
-                txtnome.Text = (string)dados.Rows[0][1];
-                txtsobrenome.Text = (string)dados.Rows[0][2];
-                txtemail.Text = (string)dados.Rows[0][3];
-                txtcelular.Text = (string)dados.Rows[0][4];
-                nascimento.Value = (DateTime)dados.Rows[0][5];
-                txtcpf.Text = (string)dados.Rows[0][6];
-
-                conectar.Close();
-
-            }
-            catch (Exception erro)
-            {
-
-                MessageBox.Show(erro.Message);
-
-            }
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-    
+
         }
 
         private void outro_CheckedChanged(object sender, EventArgs e)
@@ -294,5 +282,58 @@ namespace IntegracaoBD
                 txtoutro.Visible = false;
             }
         }
+
+        private void Consultar_click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtcpf.Text != "")
+                {
+                    // Monta o caminho até o arquivo de Banco de dados
+                    string pasta = Application.StartupPath + @"/BD/BDusers.mdb";
+                    // Monta a string de conexão com o Banco de dados Access
+                    string StrConexao = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + pasta;
+                    // Executa a conexão com o Banco de dados
+                    OleDbConnection conectar = new OleDbConnection(StrConexao);
+
+                    string procura = "SELECT * FROM Clientes";
+
+                    if (txtcpf.Text != "")
+                    {
+                        procura = "SELECT * FROM Clientes WHERE CPF LIKE '" + txtcpf.Text + "'";
+                    }
+
+                    DataTable dados = new DataTable();
+
+                    OleDbDataAdapter adpt = new OleDbDataAdapter(procura, conectar);
+
+                    //Abre a conexão
+                    conectar.Open();
+
+                    adpt.Fill(dados);
+
+                    txtnome.Text = (string)dados.Rows[0][1];
+                    txtsobrenome.Text = (string)dados.Rows[0][2];
+                    txtemail.Text = (string)dados.Rows[0][3];
+                    txtcelular.Text = (string)dados.Rows[0][4];
+                    txtcpf.Text = (string)dados.Rows[0][5];
+                    nascimento.Value = (DateTime)dados.Rows[0][6];
+
+                    conectar.Close();
+                }
+                else 
+                {
+                    MessageBox.Show("Não é possível iniciar a consulta,por favor,preencha o campo 'CPF'! ","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                }
+            }
+            catch (Exception erro)
+            {
+
+                MessageBox.Show(erro.Message);
+
+            }
+        }
     }
+
 }
+

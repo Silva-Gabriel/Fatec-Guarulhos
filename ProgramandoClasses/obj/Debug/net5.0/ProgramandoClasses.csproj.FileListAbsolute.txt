@@ -1,0 +1,16 @@
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\bin\Debug\net5.0\ProgramandoClasses.exe
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\bin\Debug\net5.0\ProgramandoClasses.deps.json
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\bin\Debug\net5.0\ProgramandoClasses.runtimeconfig.json
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\bin\Debug\net5.0\ProgramandoClasses.runtimeconfig.dev.json
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\bin\Debug\net5.0\ProgramandoClasses.dll
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\bin\Debug\net5.0\ref\ProgramandoClasses.dll
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\bin\Debug\net5.0\ProgramandoClasses.pdb
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\obj\Debug\net5.0\ProgramandoClasses.csprojAssemblyReference.cache
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\obj\Debug\net5.0\ProgramandoClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\obj\Debug\net5.0\ProgramandoClasses.AssemblyInfoInputs.cache
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\obj\Debug\net5.0\ProgramandoClasses.AssemblyInfo.cs
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\obj\Debug\net5.0\ProgramandoClasses.csproj.CoreCompileInputs.cache
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\obj\Debug\net5.0\ProgramandoClasses.dll
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\obj\Debug\net5.0\ref\ProgramandoClasses.dll
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\obj\Debug\net5.0\ProgramandoClasses.pdb
+C:\Fatec\Fatec-Guarulhos\ProgramandoClasses\obj\Debug\net5.0\ProgramandoClasses.genruntimeconfig.cache
