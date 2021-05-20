@@ -68,7 +68,6 @@ namespace ProjetoWMS
             this.checkVolume = new System.Windows.Forms.CheckBox();
             this.checkNivel = new System.Windows.Forms.CheckBox();
             this.checkEndereco = new System.Windows.Forms.CheckBox();
-            this.botaoExcluir = new System.Windows.Forms.Button();
             this.botaoConsultar = new System.Windows.Forms.Button();
             this.botaoAtualizar = new System.Windows.Forms.Button();
             this.botaoInserir = new System.Windows.Forms.Button();
@@ -89,11 +88,16 @@ namespace ProjetoWMS
             this.txtCodBarras = new System.Windows.Forms.TextBox();
             this.txtCodProd = new System.Windows.Forms.TextBox();
             this.txtIDlocal = new System.Windows.Forms.TextBox();
+            this.botaoExcluir = new System.Windows.Forms.Button();
+            this.pag3 = new System.Windows.Forms.TabPage();
             this.ID_endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.pag3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.enderecos.SuspendLayout();
             this.pag1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.acessoBD)).BeginInit();
@@ -105,10 +109,10 @@ namespace ProjetoWMS
             this.enderecos.Controls.Add(this.pag1);
             this.enderecos.Controls.Add(this.pag2);
             this.enderecos.Controls.Add(this.pag3);
-            this.enderecos.Location = new System.Drawing.Point(24, 12);
+            this.enderecos.Location = new System.Drawing.Point(1, 12);
             this.enderecos.Name = "enderecos";
             this.enderecos.SelectedIndex = 0;
-            this.enderecos.Size = new System.Drawing.Size(1200, 596);
+            this.enderecos.Size = new System.Drawing.Size(819, 439);
             this.enderecos.TabIndex = 0;
             // 
             // pag1
@@ -116,16 +120,17 @@ namespace ProjetoWMS
             this.pag1.BackColor = System.Drawing.Color.Transparent;
             this.pag1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pag1.Controls.Add(this.acessoBD);
-            this.pag1.Location = new System.Drawing.Point(4, 24);
+            this.pag1.Location = new System.Drawing.Point(4, 25);
             this.pag1.Name = "pag1";
             this.pag1.Padding = new System.Windows.Forms.Padding(3);
-            this.pag1.Size = new System.Drawing.Size(1192, 568);
+            this.pag1.Size = new System.Drawing.Size(811, 410);
             this.pag1.TabIndex = 0;
             this.pag1.Text = "Banco de dados";
             this.pag1.Click += new System.EventHandler(this.pag1_Click);
             // 
             // acessoBD
             // 
+            this.acessoBD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.acessoBD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.acessoBD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -145,11 +150,11 @@ namespace ProjetoWMS
             this.ID_fornecedor,
             this.quantidade_prod,
             this.lote_prod});
-            this.acessoBD.Location = new System.Drawing.Point(-38, 1);
+            this.acessoBD.Location = new System.Drawing.Point(-2, -2);
             this.acessoBD.Name = "acessoBD";
             this.acessoBD.RowTemplate.Height = 25;
             this.acessoBD.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.acessoBD.Size = new System.Drawing.Size(1232, 552);
+            this.acessoBD.Size = new System.Drawing.Size(815, 410);
             this.acessoBD.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -239,7 +244,11 @@ namespace ProjetoWMS
             // 
             // pag2
             // 
-            this.pag2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pag2.BackColor = System.Drawing.Color.SteelBlue;
+            this.pag2.Controls.Add(this.label2);
+            this.pag2.Controls.Add(this.label4);
+            this.pag2.Controls.Add(this.label3);
+            this.pag2.Controls.Add(this.label1);
             this.pag2.Controls.Add(this.checkComprimento);
             this.pag2.Controls.Add(this.checkModulo);
             this.pag2.Controls.Add(this.checkBox2);
@@ -258,7 +267,6 @@ namespace ProjetoWMS
             this.pag2.Controls.Add(this.checkVolume);
             this.pag2.Controls.Add(this.checkNivel);
             this.pag2.Controls.Add(this.checkEndereco);
-            this.pag2.Controls.Add(this.botaoExcluir);
             this.pag2.Controls.Add(this.botaoConsultar);
             this.pag2.Controls.Add(this.botaoAtualizar);
             this.pag2.Controls.Add(this.botaoInserir);
@@ -279,18 +287,20 @@ namespace ProjetoWMS
             this.pag2.Controls.Add(this.txtCodBarras);
             this.pag2.Controls.Add(this.txtCodProd);
             this.pag2.Controls.Add(this.txtIDlocal);
-            this.pag2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pag2.Location = new System.Drawing.Point(4, 24);
+            this.pag2.Controls.Add(this.botaoExcluir);
+            this.pag2.Font = new System.Drawing.Font("Matura MT Script Capitals", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.pag2.ForeColor = System.Drawing.Color.Red;
+            this.pag2.Location = new System.Drawing.Point(4, 25);
             this.pag2.Name = "pag2";
             this.pag2.Padding = new System.Windows.Forms.Padding(3);
-            this.pag2.Size = new System.Drawing.Size(1192, 568);
+            this.pag2.Size = new System.Drawing.Size(811, 410);
             this.pag2.TabIndex = 1;
             this.pag2.Text = "Atualizar banco";
             // 
             // checkComprimento
             // 
             this.checkComprimento.AutoSize = true;
-            this.checkComprimento.Location = new System.Drawing.Point(781, 116);
+            this.checkComprimento.Location = new System.Drawing.Point(669, 124);
             this.checkComprimento.Name = "checkComprimento";
             this.checkComprimento.Size = new System.Drawing.Size(15, 14);
             this.checkComprimento.TabIndex = 18;
@@ -299,7 +309,7 @@ namespace ProjetoWMS
             // checkModulo
             // 
             this.checkModulo.AutoSize = true;
-            this.checkModulo.Location = new System.Drawing.Point(781, 54);
+            this.checkModulo.Location = new System.Drawing.Point(669, 58);
             this.checkModulo.Name = "checkModulo";
             this.checkModulo.Size = new System.Drawing.Size(15, 14);
             this.checkModulo.TabIndex = 18;
@@ -308,7 +318,7 @@ namespace ProjetoWMS
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(781, 54);
+            this.checkBox2.Location = new System.Drawing.Point(669, 58);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 18;
@@ -317,7 +327,7 @@ namespace ProjetoWMS
             // checkLote
             // 
             this.checkLote.AutoSize = true;
-            this.checkLote.Location = new System.Drawing.Point(632, 175);
+            this.checkLote.Location = new System.Drawing.Point(542, 187);
             this.checkLote.Name = "checkLote";
             this.checkLote.Size = new System.Drawing.Size(15, 14);
             this.checkLote.TabIndex = 18;
@@ -326,7 +336,7 @@ namespace ProjetoWMS
             // checkLargura
             // 
             this.checkLargura.AutoSize = true;
-            this.checkLargura.Location = new System.Drawing.Point(632, 116);
+            this.checkLargura.Location = new System.Drawing.Point(542, 124);
             this.checkLargura.Name = "checkLargura";
             this.checkLargura.Size = new System.Drawing.Size(15, 14);
             this.checkLargura.TabIndex = 18;
@@ -335,7 +345,7 @@ namespace ProjetoWMS
             // checkCorredor
             // 
             this.checkCorredor.AutoSize = true;
-            this.checkCorredor.Location = new System.Drawing.Point(632, 54);
+            this.checkCorredor.Location = new System.Drawing.Point(542, 58);
             this.checkCorredor.Name = "checkCorredor";
             this.checkCorredor.Size = new System.Drawing.Size(15, 14);
             this.checkCorredor.TabIndex = 18;
@@ -344,7 +354,7 @@ namespace ProjetoWMS
             // checkQuantidade
             // 
             this.checkQuantidade.AutoSize = true;
-            this.checkQuantidade.Location = new System.Drawing.Point(483, 175);
+            this.checkQuantidade.Location = new System.Drawing.Point(414, 187);
             this.checkQuantidade.Name = "checkQuantidade";
             this.checkQuantidade.Size = new System.Drawing.Size(15, 14);
             this.checkQuantidade.TabIndex = 18;
@@ -353,7 +363,7 @@ namespace ProjetoWMS
             // checkArea
             // 
             this.checkArea.AutoSize = true;
-            this.checkArea.Location = new System.Drawing.Point(483, 116);
+            this.checkArea.Location = new System.Drawing.Point(414, 124);
             this.checkArea.Name = "checkArea";
             this.checkArea.Size = new System.Drawing.Size(15, 14);
             this.checkArea.TabIndex = 18;
@@ -362,7 +372,7 @@ namespace ProjetoWMS
             // checkAltura
             // 
             this.checkAltura.AutoSize = true;
-            this.checkAltura.Location = new System.Drawing.Point(483, 54);
+            this.checkAltura.Location = new System.Drawing.Point(414, 58);
             this.checkAltura.Name = "checkAltura";
             this.checkAltura.Size = new System.Drawing.Size(15, 14);
             this.checkAltura.TabIndex = 18;
@@ -371,7 +381,7 @@ namespace ProjetoWMS
             // checkBoxIDforn
             // 
             this.checkBoxIDforn.AutoSize = true;
-            this.checkBoxIDforn.Location = new System.Drawing.Point(334, 175);
+            this.checkBoxIDforn.Location = new System.Drawing.Point(286, 187);
             this.checkBoxIDforn.Name = "checkBoxIDforn";
             this.checkBoxIDforn.Size = new System.Drawing.Size(15, 14);
             this.checkBoxIDforn.TabIndex = 18;
@@ -380,7 +390,7 @@ namespace ProjetoWMS
             // checkPesoBruto
             // 
             this.checkPesoBruto.AutoSize = true;
-            this.checkPesoBruto.Location = new System.Drawing.Point(334, 116);
+            this.checkPesoBruto.Location = new System.Drawing.Point(286, 124);
             this.checkPesoBruto.Name = "checkPesoBruto";
             this.checkPesoBruto.Size = new System.Drawing.Size(15, 14);
             this.checkPesoBruto.TabIndex = 18;
@@ -389,7 +399,7 @@ namespace ProjetoWMS
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(334, 54);
+            this.checkBox1.Location = new System.Drawing.Point(286, 58);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 18;
@@ -398,7 +408,7 @@ namespace ProjetoWMS
             // checkStatusProd
             // 
             this.checkStatusProd.AutoSize = true;
-            this.checkStatusProd.Location = new System.Drawing.Point(182, 175);
+            this.checkStatusProd.Location = new System.Drawing.Point(156, 187);
             this.checkStatusProd.Name = "checkStatusProd";
             this.checkStatusProd.Size = new System.Drawing.Size(15, 14);
             this.checkStatusProd.TabIndex = 18;
@@ -407,7 +417,7 @@ namespace ProjetoWMS
             // checkVao
             // 
             this.checkVao.AutoSize = true;
-            this.checkVao.Location = new System.Drawing.Point(182, 116);
+            this.checkVao.Location = new System.Drawing.Point(156, 124);
             this.checkVao.Name = "checkVao";
             this.checkVao.Size = new System.Drawing.Size(15, 14);
             this.checkVao.TabIndex = 18;
@@ -416,7 +426,7 @@ namespace ProjetoWMS
             // checkCodProduto
             // 
             this.checkCodProduto.AutoSize = true;
-            this.checkCodProduto.Location = new System.Drawing.Point(182, 54);
+            this.checkCodProduto.Location = new System.Drawing.Point(156, 58);
             this.checkCodProduto.Name = "checkCodProduto";
             this.checkCodProduto.Size = new System.Drawing.Size(15, 14);
             this.checkCodProduto.TabIndex = 18;
@@ -425,7 +435,7 @@ namespace ProjetoWMS
             // checkVolume
             // 
             this.checkVolume.AutoSize = true;
-            this.checkVolume.Location = new System.Drawing.Point(22, 175);
+            this.checkVolume.Location = new System.Drawing.Point(19, 187);
             this.checkVolume.Name = "checkVolume";
             this.checkVolume.Size = new System.Drawing.Size(15, 14);
             this.checkVolume.TabIndex = 18;
@@ -434,7 +444,7 @@ namespace ProjetoWMS
             // checkNivel
             // 
             this.checkNivel.AutoSize = true;
-            this.checkNivel.Location = new System.Drawing.Point(22, 116);
+            this.checkNivel.Location = new System.Drawing.Point(19, 124);
             this.checkNivel.Name = "checkNivel";
             this.checkNivel.Size = new System.Drawing.Size(15, 14);
             this.checkNivel.TabIndex = 18;
@@ -443,182 +453,210 @@ namespace ProjetoWMS
             // checkEndereco
             // 
             this.checkEndereco.AutoSize = true;
-            this.checkEndereco.Location = new System.Drawing.Point(22, 54);
+            this.checkEndereco.Location = new System.Drawing.Point(19, 58);
             this.checkEndereco.Name = "checkEndereco";
             this.checkEndereco.Size = new System.Drawing.Size(15, 14);
             this.checkEndereco.TabIndex = 18;
             this.checkEndereco.UseVisualStyleBackColor = true;
             // 
-            // botaoExcluir
-            // 
-            this.botaoExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.botaoExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.botaoExcluir.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.botaoExcluir.ForeColor = System.Drawing.Color.Black;
-            this.botaoExcluir.Location = new System.Drawing.Point(762, 422);
-            this.botaoExcluir.Name = "botaoExcluir";
-            this.botaoExcluir.Size = new System.Drawing.Size(152, 34);
-            this.botaoExcluir.TabIndex = 17;
-            this.botaoExcluir.Text = "Excluir";
-            this.botaoExcluir.UseVisualStyleBackColor = false;
-            // 
             // botaoConsultar
             // 
-            this.botaoConsultar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.botaoConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.botaoConsultar.BackColor = System.Drawing.Color.LightGray;
+            this.botaoConsultar.BackgroundImage = global::ProjetoWMS.Properties.Resources.Lupa__2_1;
+            this.botaoConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.botaoConsultar.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.botaoConsultar.ForeColor = System.Drawing.Color.Black;
-            this.botaoConsultar.Location = new System.Drawing.Point(527, 422);
+            this.botaoConsultar.Location = new System.Drawing.Point(262, 338);
             this.botaoConsultar.Name = "botaoConsultar";
-            this.botaoConsultar.Size = new System.Drawing.Size(152, 34);
+            this.botaoConsultar.Size = new System.Drawing.Size(90, 36);
             this.botaoConsultar.TabIndex = 17;
-            this.botaoConsultar.Text = "Consultar";
             this.botaoConsultar.UseVisualStyleBackColor = false;
+            this.botaoConsultar.Click += new System.EventHandler(this.botaoConsultar_Click);
             // 
             // botaoAtualizar
             // 
-            this.botaoAtualizar.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.botaoAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.botaoAtualizar.BackColor = System.Drawing.Color.LightGray;
+            this.botaoAtualizar.BackgroundImage = global::ProjetoWMS.Properties.Resources.Atualizar;
+            this.botaoAtualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.botaoAtualizar.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.botaoAtualizar.ForeColor = System.Drawing.Color.Black;
-            this.botaoAtualizar.Location = new System.Drawing.Point(288, 422);
+            this.botaoAtualizar.Location = new System.Drawing.Point(156, 338);
             this.botaoAtualizar.Name = "botaoAtualizar";
-            this.botaoAtualizar.Size = new System.Drawing.Size(152, 34);
+            this.botaoAtualizar.Size = new System.Drawing.Size(90, 36);
             this.botaoAtualizar.TabIndex = 17;
-            this.botaoAtualizar.Text = "Atualizar";
             this.botaoAtualizar.UseVisualStyleBackColor = false;
             // 
             // botaoInserir
             // 
-            this.botaoInserir.BackColor = System.Drawing.Color.White;
-            this.botaoInserir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.botaoInserir.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.botaoInserir.ForeColor = System.Drawing.Color.Black;
-            this.botaoInserir.Location = new System.Drawing.Point(45, 422);
+            this.botaoInserir.BackColor = System.Drawing.Color.LightGray;
+            this.botaoInserir.BackgroundImage = global::ProjetoWMS.Properties.Resources.Adicionar__2_2;
+            this.botaoInserir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.botaoInserir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.botaoInserir.ForeColor = System.Drawing.Color.DimGray;
+            this.botaoInserir.Location = new System.Drawing.Point(47, 340);
             this.botaoInserir.Name = "botaoInserir";
-            this.botaoInserir.Size = new System.Drawing.Size(152, 34);
+            this.botaoInserir.Size = new System.Drawing.Size(90, 36);
             this.botaoInserir.TabIndex = 17;
-            this.botaoInserir.Text = "Inserir";
             this.botaoInserir.UseVisualStyleBackColor = false;
             // 
             // txtLote
             // 
-            this.txtLote.Location = new System.Drawing.Point(662, 170);
+            this.txtLote.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtLote.Location = new System.Drawing.Point(567, 181);
             this.txtLote.Name = "txtLote";
-            this.txtLote.Size = new System.Drawing.Size(100, 25);
+            this.txtLote.Size = new System.Drawing.Size(86, 22);
             this.txtLote.TabIndex = 16;
             // 
             // txtQuantidade
             // 
-            this.txtQuantidade.Location = new System.Drawing.Point(514, 170);
+            this.txtQuantidade.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQuantidade.Location = new System.Drawing.Point(441, 181);
             this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(100, 25);
+            this.txtQuantidade.Size = new System.Drawing.Size(86, 22);
             this.txtQuantidade.TabIndex = 15;
             // 
             // txtIDfornecedor
             // 
-            this.txtIDfornecedor.Location = new System.Drawing.Point(364, 170);
+            this.txtIDfornecedor.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtIDfornecedor.Location = new System.Drawing.Point(312, 181);
             this.txtIDfornecedor.Name = "txtIDfornecedor";
-            this.txtIDfornecedor.Size = new System.Drawing.Size(100, 25);
+            this.txtIDfornecedor.Size = new System.Drawing.Size(86, 22);
             this.txtIDfornecedor.TabIndex = 14;
             // 
             // txtStatusProd
             // 
-            this.txtStatusProd.Location = new System.Drawing.Point(212, 170);
+            this.txtStatusProd.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtStatusProd.Location = new System.Drawing.Point(182, 181);
             this.txtStatusProd.Name = "txtStatusProd";
-            this.txtStatusProd.Size = new System.Drawing.Size(100, 25);
+            this.txtStatusProd.Size = new System.Drawing.Size(86, 22);
             this.txtStatusProd.TabIndex = 13;
             // 
             // txtVolumeProd
             // 
-            this.txtVolumeProd.Location = new System.Drawing.Point(55, 170);
+            this.txtVolumeProd.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtVolumeProd.Location = new System.Drawing.Point(47, 181);
             this.txtVolumeProd.Name = "txtVolumeProd";
-            this.txtVolumeProd.Size = new System.Drawing.Size(100, 25);
+            this.txtVolumeProd.Size = new System.Drawing.Size(86, 22);
             this.txtVolumeProd.TabIndex = 12;
             // 
             // txtComprimento
             // 
-            this.txtComprimento.Location = new System.Drawing.Point(814, 111);
+            this.txtComprimento.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtComprimento.Location = new System.Drawing.Point(698, 118);
             this.txtComprimento.Name = "txtComprimento";
-            this.txtComprimento.Size = new System.Drawing.Size(100, 25);
+            this.txtComprimento.Size = new System.Drawing.Size(86, 22);
             this.txtComprimento.TabIndex = 11;
             // 
             // txtLargura
             // 
-            this.txtLargura.Location = new System.Drawing.Point(662, 111);
+            this.txtLargura.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtLargura.Location = new System.Drawing.Point(567, 118);
             this.txtLargura.Name = "txtLargura";
-            this.txtLargura.Size = new System.Drawing.Size(100, 25);
+            this.txtLargura.Size = new System.Drawing.Size(86, 22);
             this.txtLargura.TabIndex = 10;
             // 
             // txtAltura
             // 
-            this.txtAltura.Location = new System.Drawing.Point(514, 49);
+            this.txtAltura.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAltura.Location = new System.Drawing.Point(441, 52);
             this.txtAltura.Name = "txtAltura";
-            this.txtAltura.Size = new System.Drawing.Size(100, 25);
+            this.txtAltura.Size = new System.Drawing.Size(86, 22);
             this.txtAltura.TabIndex = 9;
             // 
             // txtPesoBruto
             // 
-            this.txtPesoBruto.Location = new System.Drawing.Point(364, 111);
+            this.txtPesoBruto.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPesoBruto.Location = new System.Drawing.Point(312, 118);
             this.txtPesoBruto.Name = "txtPesoBruto";
-            this.txtPesoBruto.Size = new System.Drawing.Size(100, 25);
+            this.txtPesoBruto.Size = new System.Drawing.Size(86, 22);
             this.txtPesoBruto.TabIndex = 8;
             // 
             // txtVao
             // 
-            this.txtVao.Location = new System.Drawing.Point(212, 111);
+            this.txtVao.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtVao.Location = new System.Drawing.Point(182, 118);
             this.txtVao.Name = "txtVao";
-            this.txtVao.Size = new System.Drawing.Size(100, 25);
+            this.txtVao.Size = new System.Drawing.Size(86, 22);
             this.txtVao.TabIndex = 7;
             // 
             // txtnivel
             // 
-            this.txtnivel.Location = new System.Drawing.Point(55, 111);
+            this.txtnivel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtnivel.Location = new System.Drawing.Point(47, 118);
             this.txtnivel.Name = "txtnivel";
-            this.txtnivel.Size = new System.Drawing.Size(100, 25);
+            this.txtnivel.Size = new System.Drawing.Size(86, 22);
             this.txtnivel.TabIndex = 6;
             // 
             // txtModulo
             // 
-            this.txtModulo.Location = new System.Drawing.Point(814, 49);
+            this.txtModulo.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtModulo.Location = new System.Drawing.Point(698, 52);
             this.txtModulo.Name = "txtModulo";
-            this.txtModulo.Size = new System.Drawing.Size(100, 25);
+            this.txtModulo.Size = new System.Drawing.Size(86, 22);
             this.txtModulo.TabIndex = 5;
             // 
             // txtCorredor
             // 
-            this.txtCorredor.Location = new System.Drawing.Point(662, 49);
+            this.txtCorredor.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCorredor.Location = new System.Drawing.Point(567, 52);
             this.txtCorredor.Name = "txtCorredor";
-            this.txtCorredor.Size = new System.Drawing.Size(100, 25);
+            this.txtCorredor.Size = new System.Drawing.Size(86, 22);
             this.txtCorredor.TabIndex = 4;
             // 
             // txtArea
             // 
-            this.txtArea.Location = new System.Drawing.Point(514, 111);
+            this.txtArea.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtArea.Location = new System.Drawing.Point(441, 118);
             this.txtArea.Name = "txtArea";
-            this.txtArea.Size = new System.Drawing.Size(100, 25);
+            this.txtArea.Size = new System.Drawing.Size(86, 22);
             this.txtArea.TabIndex = 3;
             // 
             // txtCodBarras
             // 
-            this.txtCodBarras.Location = new System.Drawing.Point(364, 49);
+            this.txtCodBarras.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodBarras.Location = new System.Drawing.Point(312, 52);
             this.txtCodBarras.Name = "txtCodBarras";
-            this.txtCodBarras.Size = new System.Drawing.Size(100, 25);
+            this.txtCodBarras.Size = new System.Drawing.Size(86, 22);
             this.txtCodBarras.TabIndex = 2;
             // 
             // txtCodProd
             // 
-            this.txtCodProd.Location = new System.Drawing.Point(212, 49);
+            this.txtCodProd.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodProd.Location = new System.Drawing.Point(182, 52);
             this.txtCodProd.Name = "txtCodProd";
-            this.txtCodProd.Size = new System.Drawing.Size(100, 25);
+            this.txtCodProd.Size = new System.Drawing.Size(86, 22);
             this.txtCodProd.TabIndex = 1;
             // 
             // txtIDlocal
             // 
-            this.txtIDlocal.Location = new System.Drawing.Point(55, 49);
+            this.txtIDlocal.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtIDlocal.Location = new System.Drawing.Point(47, 52);
             this.txtIDlocal.Name = "txtIDlocal";
-            this.txtIDlocal.Size = new System.Drawing.Size(100, 25);
+            this.txtIDlocal.Size = new System.Drawing.Size(86, 22);
             this.txtIDlocal.TabIndex = 0;
+            // 
+            // botaoExcluir
+            // 
+            this.botaoExcluir.BackColor = System.Drawing.Color.LightGray;
+            this.botaoExcluir.BackgroundImage = global::ProjetoWMS.Properties.Resources.lixeira;
+            this.botaoExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.botaoExcluir.Font = new System.Drawing.Font("Matura MT Script Capitals", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.botaoExcluir.ForeColor = System.Drawing.Color.Red;
+            this.botaoExcluir.Location = new System.Drawing.Point(366, 338);
+            this.botaoExcluir.Name = "botaoExcluir";
+            this.botaoExcluir.Size = new System.Drawing.Size(90, 36);
+            this.botaoExcluir.TabIndex = 17;
+            this.botaoExcluir.UseVisualStyleBackColor = false;
+            // 
+            // pag3
+            // 
+            this.pag3.Location = new System.Drawing.Point(4, 25);
+            this.pag3.Name = "pag3";
+            this.pag3.Padding = new System.Windows.Forms.Padding(3);
+            this.pag3.Size = new System.Drawing.Size(811, 410);
+            this.pag3.TabIndex = 2;
+            this.pag3.Text = "Endereços";
+            this.pag3.UseVisualStyleBackColor = true;
             // 
             // ID_endereco
             // 
@@ -644,24 +682,60 @@ namespace ProjetoWMS
             this.textBox6.Size = new System.Drawing.Size(100, 23);
             this.textBox6.TabIndex = 5;
             // 
-            // pag3
+            // label1
             // 
-            this.pag3.Location = new System.Drawing.Point(4, 24);
-            this.pag3.Name = "pag3";
-            this.pag3.Padding = new System.Windows.Forms.Padding(3);
-            this.pag3.Size = new System.Drawing.Size(1192, 568);
-            this.pag3.TabIndex = 2;
-            this.pag3.Text = "Endereços";
-            this.pag3.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(163, 379);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 21);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Atualizar";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(45, 379);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 21);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Adicionar";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(262, 379);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 21);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Consultar";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(376, 379);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 21);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Excluir";
             // 
             // InterfacePrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1247, 593);
+            this.ClientSize = new System.Drawing.Size(822, 452);
             this.Controls.Add(this.enderecos);
+            this.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "InterfacePrincipal";
+            this.Opacity = 0.98D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InterfacePrincipal";
             this.TopMost = true;
@@ -707,24 +781,8 @@ namespace ProjetoWMS
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TabPage pag3;
         private System.Windows.Forms.TabPage pag2;
-        private System.Windows.Forms.TextBox txtnivel;
-        private System.Windows.Forms.TextBox txtModulo;
-        private System.Windows.Forms.TextBox txtCorredor;
-        private System.Windows.Forms.TextBox txtArea;
-        private System.Windows.Forms.TextBox txtCodBarras;
-        private System.Windows.Forms.TextBox txtCodProd;
-        private System.Windows.Forms.TextBox txtIDlocal;
-        private System.Windows.Forms.TextBox txtLote;
-        private System.Windows.Forms.TextBox txtQuantidade;
-        private System.Windows.Forms.TextBox txtIDfornecedor;
-        private System.Windows.Forms.TextBox txtStatusProd;
-        private System.Windows.Forms.TextBox txtVolumeProd;
-        private System.Windows.Forms.TextBox txtComprimento;
-        private System.Windows.Forms.TextBox txtLargura;
-        private System.Windows.Forms.TextBox txtAltura;
-        private System.Windows.Forms.TextBox txtPesoBruto;
-        private System.Windows.Forms.TextBox txtVao;
         private System.Windows.Forms.CheckBox checkComprimento;
         private System.Windows.Forms.CheckBox checkModulo;
         private System.Windows.Forms.CheckBox checkBox2;
@@ -743,10 +801,30 @@ namespace ProjetoWMS
         private System.Windows.Forms.CheckBox checkVolume;
         private System.Windows.Forms.CheckBox checkNivel;
         private System.Windows.Forms.CheckBox checkEndereco;
-        private System.Windows.Forms.Button botaoExcluir;
         private System.Windows.Forms.Button botaoConsultar;
         private System.Windows.Forms.Button botaoAtualizar;
         private System.Windows.Forms.Button botaoInserir;
-        private System.Windows.Forms.TabPage pag3;
+        private System.Windows.Forms.TextBox txtLote;
+        private System.Windows.Forms.TextBox txtQuantidade;
+        private System.Windows.Forms.TextBox txtIDfornecedor;
+        private System.Windows.Forms.TextBox txtStatusProd;
+        private System.Windows.Forms.TextBox txtVolumeProd;
+        private System.Windows.Forms.TextBox txtComprimento;
+        private System.Windows.Forms.TextBox txtLargura;
+        private System.Windows.Forms.TextBox txtAltura;
+        private System.Windows.Forms.TextBox txtPesoBruto;
+        private System.Windows.Forms.TextBox txtVao;
+        private System.Windows.Forms.TextBox txtnivel;
+        private System.Windows.Forms.TextBox txtModulo;
+        private System.Windows.Forms.TextBox txtCorredor;
+        private System.Windows.Forms.TextBox txtArea;
+        private System.Windows.Forms.TextBox txtCodBarras;
+        private System.Windows.Forms.TextBox txtCodProd;
+        private System.Windows.Forms.TextBox txtIDlocal;
+        private System.Windows.Forms.Button botaoExcluir;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
     }
 }

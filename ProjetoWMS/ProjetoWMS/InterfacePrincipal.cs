@@ -44,5 +44,10 @@ namespace ProjetoWMS
         {
 
         }
+
+        private void botaoConsultar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
