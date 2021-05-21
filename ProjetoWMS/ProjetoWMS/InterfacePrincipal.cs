@@ -14,8 +14,8 @@ namespace ProjetoWMS
         public InterfacePrincipal()
         {
             InitializeComponent();
-            List<TextBox> txtList = new List<TextBox>() { txtAltura, txtArea, txtCodBarras, txtCodProd, txtComprimento, txtCorredor, txtIDfornecedor, txtIDlocal, txtLargura, txtLote, txtModulo, txtnivel, txtPesoBruto, txtQuantidade, txtStatusProd, txtVao, txtVolumeProd };
-            List<string> descList = new List<string>() { "Altura do produto", "Área", "Código de barras","Código","Comprimento","Corredor", "ID fornecedor","ID Endereço", "Largura", "Lote", "Módulo", "Nível", "Peso bruto", "Quantidade", "Status(Ativo/Inativo)", "Vão", "Volume" };
+            List<TextBox> txtList = new List<TextBox>() { txtAltura, txtArea, txtCodBarras, txtCodProd, txtComprimento, txtCorredor, txtIDfornecedor, txtIDlocal, txtLargura, txtLote, txtModulo, txtnivel, txtPesoBruto, txtQuantidade, txtStatusProd, txtVao, txtVolumeProd, txtNomeProd, localizarCodigo, localizarFornecedor, localizarNome  };
+            List<string> descList = new List<string>() { "Altura do produto", "Área", "Código de barras","Código","Comprimento","Corredor", "ID fornecedor","ID Endereço", "Largura", "Lote", "Módulo", "Nível", "Peso bruto", "Quantidade", "Status(Ativo/Inativo)", "Vão", "Volume", "Nome", "Código", "Fornecedor","Nome" };
             SetCueBanner(ref txtList, descList);
         }
 

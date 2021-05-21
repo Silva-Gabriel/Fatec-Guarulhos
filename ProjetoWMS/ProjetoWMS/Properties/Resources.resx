@@ -118,43 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lup (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lup (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lupa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lupa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lupa (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lupa (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Adicionar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Adicionar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoFatec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoFatec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Lupa (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lupa (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Adicionar (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Adicionar (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Adicionar (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Adicionar (2)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lup" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Adicionar (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adicionar (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adicionar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adicionar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lixeira" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lixeira.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Adicionar (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Adicionar (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Atualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Atualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lupa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lupa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Atualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Atualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lup (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lup (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logoFatec" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoFatec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Adicionar (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adicionar (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lupa (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lupa (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapaRuas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapaRuas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
