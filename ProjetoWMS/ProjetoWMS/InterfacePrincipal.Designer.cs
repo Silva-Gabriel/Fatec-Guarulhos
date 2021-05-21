@@ -814,7 +814,7 @@ namespace ProjetoWMS
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(199, 40);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Vizualizar";
+            this.button1.Text = "Visualizar";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // ID_endereco
