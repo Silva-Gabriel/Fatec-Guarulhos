@@ -80,6 +80,7 @@ namespace AgendaDeContatos
             this.botaoConsultar.TabIndex = 12;
             this.botaoConsultar.Text = "Consultar";
             this.botaoConsultar.UseVisualStyleBackColor = false;
+            this.botaoConsultar.Click += new System.EventHandler(this.aoClicar_Consultar);
             // 
             // botaoDeletar
             // 
@@ -95,7 +96,7 @@ namespace AgendaDeContatos
             this.botaoDeletar.TabIndex = 11;
             this.botaoDeletar.Text = "Deletar";
             this.botaoDeletar.UseVisualStyleBackColor = false;
-            this.botaoDeletar.Click += new System.EventHandler(this.botaoDeletar_Click);
+            this.botaoDeletar.Click += new System.EventHandler(this.aoClicar_Deletar);
             // 
             // botaoAtualizar
             // 
@@ -127,7 +128,7 @@ namespace AgendaDeContatos
             this.botaoInserir.TabIndex = 9;
             this.botaoInserir.Text = "Cadastrar";
             this.botaoInserir.UseVisualStyleBackColor = false;
-            this.botaoInserir.Click += new System.EventHandler(this.aoClicar_Inserir);
+            this.botaoInserir.Click += new System.EventHandler(this.aoClicar_Cadastrar);
             // 
             // label1
             // 
@@ -251,6 +252,7 @@ namespace AgendaDeContatos
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciador de contatos";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.principal_FormClosed);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.BackgroundGradient);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

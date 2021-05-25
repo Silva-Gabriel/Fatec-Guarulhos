@@ -4,5 +4,8 @@
     <Compile Update="cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

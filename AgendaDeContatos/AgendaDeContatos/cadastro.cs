@@ -11,6 +11,7 @@ using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
 using System.Data.OleDb;
 
+
 namespace AgendaDeContatos
 {
     public partial class principal : Form
@@ -38,7 +39,7 @@ namespace AgendaDeContatos
         //Variável global de conexão com o banco de dados
         
 
-        private void changeBackgroundColor(object sender, PaintEventArgs e)
+        public void changeBackgroundColor(object sender, PaintEventArgs e)
         {
             Graphics graphics = e.Graphics;
 
@@ -88,7 +89,7 @@ namespace AgendaDeContatos
         }
 
         //Inserção dos dados no banco
-        private void aoClicar_Inserir(object sender, EventArgs e)
+        private void aoClicar_Cadastrar(object sender, EventArgs e)
         {
             try
             {
@@ -118,22 +119,24 @@ namespace AgendaDeContatos
                         //método sem retorno de dados
                         comando.ExecuteNonQuery();
 
-                        MessageBox.Show("Dados gravados com sucesso", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Dados gravados com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         limparCampos();
 
                         conectar.Close();
                     }
                 }
-                else 
+                else
                 {
-                    MessageBox.Show("Email já cadastrado","atenção",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MessageBox.Show("Email já cadastrado", "atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch(Exception erro)
+            catch (Exception erro)
             {
-                MessageBox.Show(erro.Message);
+                MessageBox.Show(erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+
         }
 
         //Atualização dos dados
@@ -201,6 +204,7 @@ namespace AgendaDeContatos
                     conectar.Dispose();
 
                     limparCampos();
+                   
                 }
             }
             catch(Exception erro)
@@ -208,10 +212,96 @@ namespace AgendaDeContatos
                 MessageBox.Show(erro.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        //Exclusão dos dados
-        private void botaoDeletar_Click(object sender, EventArgs e)
-        {
 
+        private void aoClicar_Deletar(object sender, EventArgs e)
+        {
+            try
+            {
+                if (verificacaoPK(txtEmail.Text) == true)
+                {
+                    string caminho = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + pasta;
+
+                    OleDbConnection conectar = new OleDbConnection(caminho);
+
+                    conectar.Open();
+
+                    OleDbCommand comando = new OleDbCommand();
+                    comando.Connection = conectar;
+
+                    comando.CommandText = "DELETE FROM Contatos WHERE email = '" + txtEmail.Text + "'";
+
+                    comando.ExecuteNonQuery();
+
+                    MessageBox.Show("Dados excluídos com sucesso","Aviso",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                    limparCampos();
+
+                    conectar.Dispose();
+                }
+                else
+                {
+                    MessageBox.Show("Email não cadastrado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch(Exception erro) 
+            {
+                MessageBox.Show(erro.Message,"Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
+
+        private void aoClicar_Consultar(object sender, EventArgs e)
+        {
+            try
+            {
+                if (verificacaoPK(txtEmail.Text) == true)
+                {
+                    string caminho = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + pasta;
+
+                    OleDbConnection conectar = new OleDbConnection(caminho);
+
+                    string procurar = "SELECT * FROM Contatos WHERE email LIKE '" + txtEmail.Text + "'";
+
+                    DataTable dados = new DataTable();
+
+                    OleDbDataAdapter adaptador = new OleDbDataAdapter(procurar, conectar);
+
+                    conectar.Open();
+
+                    adaptador.Fill(dados);
+
+                    string nome, sobrenome, celular, telefone, endereco, sigla;
+
+                    nome = (string)dados.Rows[0][1];
+                    sobrenome = (string)dados.Rows[0][2];
+                    celular = (string)dados.Rows[0][4];
+                    telefone = (string)dados.Rows[0][5];
+                    endereco = (string)dados.Rows[0][6];
+                    sigla = (string)dados.Rows[0][7];
+
+                    //Passando os dados para o forms de consulta
+                    Consulta formConsulta = new Consulta(nome,sobrenome,celular,telefone,endereco,sigla);
+                    formConsulta.Show();
+
+                    limparCampos();
+                    this.Visible = false;
+                    
+
+                    conectar.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Por favor,preencha o campo Email corretamente para iniciar a consulta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception erro) 
+            {
+                MessageBox.Show(erro.Message,"Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
+
+        private void principal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
