@@ -1,0 +1,10 @@
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\bin\Debug\AtividadeAvaliativaADS.exe.config
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\bin\Debug\AtividadeAvaliativaADS.exe
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\bin\Debug\AtividadeAvaliativaADS.pdb
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\obj\Debug\AtividadeAvaliativaADS.csprojAssemblyReference.cache
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\obj\Debug\AtividadeAvaliativaADS.Form1.resources
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\obj\Debug\AtividadeAvaliativaADS.Properties.Resources.resources
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\obj\Debug\AtividadeAvaliativaADS.csproj.GenerateResource.cache
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\obj\Debug\AtividadeAvaliativaADS.csproj.CoreCompileInputs.cache
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\obj\Debug\AtividadeAvaliativaADS.exe
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADS\obj\Debug\AtividadeAvaliativaADS.pdb

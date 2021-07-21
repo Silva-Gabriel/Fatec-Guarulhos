@@ -1,0 +1,16 @@
+C:\Fatec\Fatec-Guarulhos\Fibonacci\bin\Debug\net5.0\Fibonacci.exe
+C:\Fatec\Fatec-Guarulhos\Fibonacci\bin\Debug\net5.0\Fibonacci.deps.json
+C:\Fatec\Fatec-Guarulhos\Fibonacci\bin\Debug\net5.0\Fibonacci.runtimeconfig.json
+C:\Fatec\Fatec-Guarulhos\Fibonacci\bin\Debug\net5.0\Fibonacci.runtimeconfig.dev.json
+C:\Fatec\Fatec-Guarulhos\Fibonacci\bin\Debug\net5.0\Fibonacci.dll
+C:\Fatec\Fatec-Guarulhos\Fibonacci\bin\Debug\net5.0\ref\Fibonacci.dll
+C:\Fatec\Fatec-Guarulhos\Fibonacci\bin\Debug\net5.0\Fibonacci.pdb
+C:\Fatec\Fatec-Guarulhos\Fibonacci\obj\Debug\net5.0\Fibonacci.csprojAssemblyReference.cache
+C:\Fatec\Fatec-Guarulhos\Fibonacci\obj\Debug\net5.0\Fibonacci.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fatec\Fatec-Guarulhos\Fibonacci\obj\Debug\net5.0\Fibonacci.AssemblyInfoInputs.cache
+C:\Fatec\Fatec-Guarulhos\Fibonacci\obj\Debug\net5.0\Fibonacci.AssemblyInfo.cs
+C:\Fatec\Fatec-Guarulhos\Fibonacci\obj\Debug\net5.0\Fibonacci.csproj.CoreCompileInputs.cache
+C:\Fatec\Fatec-Guarulhos\Fibonacci\obj\Debug\net5.0\Fibonacci.dll
+C:\Fatec\Fatec-Guarulhos\Fibonacci\obj\Debug\net5.0\ref\Fibonacci.dll
+C:\Fatec\Fatec-Guarulhos\Fibonacci\obj\Debug\net5.0\Fibonacci.pdb
+C:\Fatec\Fatec-Guarulhos\Fibonacci\obj\Debug\net5.0\Fibonacci.genruntimeconfig.cache

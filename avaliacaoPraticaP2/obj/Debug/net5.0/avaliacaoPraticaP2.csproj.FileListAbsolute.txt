@@ -1,0 +1,16 @@
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\bin\Debug\net5.0\avaliacaoPraticaP2.exe
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\bin\Debug\net5.0\avaliacaoPraticaP2.deps.json
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\bin\Debug\net5.0\avaliacaoPraticaP2.runtimeconfig.json
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\bin\Debug\net5.0\avaliacaoPraticaP2.runtimeconfig.dev.json
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\bin\Debug\net5.0\avaliacaoPraticaP2.dll
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\bin\Debug\net5.0\ref\avaliacaoPraticaP2.dll
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\bin\Debug\net5.0\avaliacaoPraticaP2.pdb
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\obj\Debug\net5.0\avaliacaoPraticaP2.csprojAssemblyReference.cache
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\obj\Debug\net5.0\avaliacaoPraticaP2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\obj\Debug\net5.0\avaliacaoPraticaP2.AssemblyInfoInputs.cache
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\obj\Debug\net5.0\avaliacaoPraticaP2.AssemblyInfo.cs
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\obj\Debug\net5.0\avaliacaoPraticaP2.csproj.CoreCompileInputs.cache
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\obj\Debug\net5.0\avaliacaoPraticaP2.dll
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\obj\Debug\net5.0\ref\avaliacaoPraticaP2.dll
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\obj\Debug\net5.0\avaliacaoPraticaP2.pdb
+C:\Fatec-Guarulhos\avaliacaoPraticaP2\obj\Debug\net5.0\avaliacaoPraticaP2.genruntimeconfig.cache

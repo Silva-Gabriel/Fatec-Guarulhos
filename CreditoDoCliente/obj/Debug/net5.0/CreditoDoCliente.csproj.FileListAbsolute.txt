@@ -1,0 +1,16 @@
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\bin\Debug\net5.0\CreditoDoCliente.exe
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\bin\Debug\net5.0\CreditoDoCliente.deps.json
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\bin\Debug\net5.0\CreditoDoCliente.runtimeconfig.json
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\bin\Debug\net5.0\CreditoDoCliente.runtimeconfig.dev.json
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\bin\Debug\net5.0\CreditoDoCliente.dll
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\bin\Debug\net5.0\ref\CreditoDoCliente.dll
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\bin\Debug\net5.0\CreditoDoCliente.pdb
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\obj\Debug\net5.0\CreditoDoCliente.csprojAssemblyReference.cache
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\obj\Debug\net5.0\CreditoDoCliente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\obj\Debug\net5.0\CreditoDoCliente.AssemblyInfoInputs.cache
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\obj\Debug\net5.0\CreditoDoCliente.AssemblyInfo.cs
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\obj\Debug\net5.0\CreditoDoCliente.csproj.CoreCompileInputs.cache
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\obj\Debug\net5.0\CreditoDoCliente.dll
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\obj\Debug\net5.0\ref\CreditoDoCliente.dll
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\obj\Debug\net5.0\CreditoDoCliente.pdb
+C:\Fatec\Fatec-Guarulhos\CreditoDoCliente\obj\Debug\net5.0\CreditoDoCliente.genruntimeconfig.cache

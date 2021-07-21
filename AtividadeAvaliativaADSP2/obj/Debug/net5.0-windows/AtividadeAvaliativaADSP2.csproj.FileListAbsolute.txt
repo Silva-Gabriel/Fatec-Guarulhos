@@ -1,0 +1,16 @@
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\obj\Debug\net5.0-windows\AtividadeAvaliativaADSP2.csprojAssemblyReference.cache
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\obj\Debug\net5.0-windows\AtividadeAvaliativaADSP2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\obj\Debug\net5.0-windows\AtividadeAvaliativaADSP2.AssemblyInfoInputs.cache
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\obj\Debug\net5.0-windows\AtividadeAvaliativaADSP2.AssemblyInfo.cs
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\obj\Debug\net5.0-windows\AtividadeAvaliativaADSP2.csproj.CoreCompileInputs.cache
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\bin\Debug\net5.0-windows\AtividadeAvaliativaADSP2.exe
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\bin\Debug\net5.0-windows\AtividadeAvaliativaADSP2.deps.json
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\bin\Debug\net5.0-windows\AtividadeAvaliativaADSP2.runtimeconfig.json
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\bin\Debug\net5.0-windows\AtividadeAvaliativaADSP2.runtimeconfig.dev.json
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\bin\Debug\net5.0-windows\AtividadeAvaliativaADSP2.dll
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\bin\Debug\net5.0-windows\ref\AtividadeAvaliativaADSP2.dll
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\bin\Debug\net5.0-windows\AtividadeAvaliativaADSP2.pdb
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\obj\Debug\net5.0-windows\AtividadeAvaliativaADSP2.dll
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\obj\Debug\net5.0-windows\ref\AtividadeAvaliativaADSP2.dll
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\obj\Debug\net5.0-windows\AtividadeAvaliativaADSP2.pdb
+C:\Fatec\Fatec-Guarulhos\AtividadeAvaliativaADSP2\obj\Debug\net5.0-windows\AtividadeAvaliativaADSP2.genruntimeconfig.cache

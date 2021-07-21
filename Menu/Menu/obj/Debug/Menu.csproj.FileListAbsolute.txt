@@ -1,0 +1,10 @@
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\bin\Debug\Menu.exe.config
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\bin\Debug\Menu.exe
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\bin\Debug\Menu.pdb
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\obj\Debug\Menu.csprojAssemblyReference.cache
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\obj\Debug\Menu.Form1.resources
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\obj\Debug\Menu.Properties.Resources.resources
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\obj\Debug\Menu.csproj.GenerateResource.cache
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\obj\Debug\Menu.csproj.CoreCompileInputs.cache
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\obj\Debug\Menu.exe
+C:\Fatec\Fatec-Guarulhos\Menu\Menu\obj\Debug\Menu.pdb

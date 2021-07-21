@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS2001: Arquivo de origem "C:\Fatec\Fatec-Guarulhos\CalculadoraInterativa\CalculadoraInterativa\divisao.cs" não pode ser encontrado.
+dotnet_diagnostic.CS2001.severity = suggestion
