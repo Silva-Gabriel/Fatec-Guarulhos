@@ -1,0 +1,17 @@
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\bin\Debug\netcoreapp3.1\ProjetoWMS.exe
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\bin\Debug\netcoreapp3.1\ProjetoWMS.deps.json
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\bin\Debug\netcoreapp3.1\ProjetoWMS.runtimeconfig.json
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\bin\Debug\netcoreapp3.1\ProjetoWMS.runtimeconfig.dev.json
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\bin\Debug\netcoreapp3.1\ProjetoWMS.dll
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\bin\Debug\netcoreapp3.1\ProjetoWMS.pdb
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.csproj.GenerateResource.cache
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.AssemblyInfoInputs.cache
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.AssemblyInfo.cs
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.csproj.CoreCompileInputs.cache
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.dll
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.pdb
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.genruntimeconfig.cache
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.FormLogin.resources
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.InterfacePrincipal.resources
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.Properties.Resources.resources
+C:\Fatec\Fatec-Guarulhos\ProjetoWMS\ProjetoWMS\obj\Debug\netcoreapp3.1\ProjetoWMS.csprojAssemblyReference.cache
