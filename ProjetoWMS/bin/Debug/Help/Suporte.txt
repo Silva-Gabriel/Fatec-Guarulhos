@@ -1,0 +1,125 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INICIANDO UM NOVO REGISTRO:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FORMULÁRIO DE "PORTARIAS"
+
+COMO ACESSAR A TABELA?
+
+- No canto superior esquerdo o item "Navegação" da acesso a classe "Registrar", selecione "Portarias".
+(verifique se acima de "Navegação" não esta escrito "FAWS - Portarias"
+caso esteja, não será possivel seguir o passo acima, porque voce ja esta em "Portarias").
+
+INICIAR UM REGISTRO DE "PORTARIAS":
+
+- Na interface "Portarias", preencha os campos da secção "Informações do Veículo", "Informações de Entrada e Saída" & "Informações de Entrega"  
+- No canto inferior direito da interface "Portarias" clique em "Salvar".
+
+LOCALIZANDO ENTRADAS REGISTRADOS:
+
+- Na secção "Localizar Portarias"
+- Preencha o campo "Senha; Placa do Veículo; ou Motorista" e clique em "Procurar".
+- É possivel ver todos os registros clicando em "Ver todos".
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FORMULÁRIO DE "RECEBIMENTOS":
+
+COMO ACESSAR A TABELA?
+
+- No canto superior esquerdo o item "Navegação" da acesso a classe "Registrar", selecione "Recebimento".
+(verifique se acima de "Navegação" não esta escrito "FAWS - Recebimento"
+caso esteja, não será possivel seguir o passo acima, porque voce ja esta em "Recebimento").
+
+INICIAR UM REGISTRO DE "RECEBIMENTO":
+
+- Na interface "Recebimento", preencha os campos da secção "Cadastro de Recebimento" (todos são números ou escolha de opções)
+- No canto inferior direito da interface "Recebimento" clique em "Salvar".
+
+LOCALIZANDO RECEBIMENTOS REGISTRADOS:
+
+- Na secção "Localizar Recebimento".
+- Preencha o campo "Senha; ID. de Recebimento; ou Data do recebimento" e clique em "Procurar".
+- É possivel ver todos os registros clicando em "Ver todos".
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FORMULÁRIO DE "DIVERGÊNCIAS":
+
+COMO ACESSAR A TABELA?
+
+- No canto superior esquerdo o item "Navegação" da acesso a classe "Registrar", selecione "divergências".
+(verifique se acima de "Navegação" não esta escrito "FAWS - divergências"
+caso esteja, não será possivel seguir o passo acima, porque voce ja esta em "divergências").
+
+INICIAR UM REGISTRO DE "DIVERGÊNCIA":
+
+- Na interface "Divergências", preencha os campos da secção "Cadastro de Divergências" (todos são números ou escolha de opções)
+- No canto inferior direito da interface "Divergências" clique em "Salvar".
+- Também é possivel salvar divergências na interface "Recebimento" .
+- Selecionando "sim" em "salvar como Divergência", preenchendo "ID. da Devolução:" e clicando em "Salvar".
+
+LOCALIZANDO DIVERGÊNCIAS REGISTRADAS:
+
+- Na secção "Localizar Divergências".
+- Preencha o campo "ID. de Devolução; Num. do Pedido; ou Data da devolução" e clique em "Procurar".
+- É possivel ver todos os registros clicando em "Ver todos".
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FORMULÁRIO DE "PEDIDOS":
+
+ATENÇÃO! - ESSE FORMULÁRIO SÓ PERMITE A CONSULTA DE DADOS.
+
+COMO ACESSAR A TABELA?
+
+- No canto superior esquerdo o item "Navegação" da acesso a classe "Registrar", selecione "Pedidos".
+(verifique se acima de "Navegação" não esta escrito "FAWS - divergências"
+caso esteja, não será possivel seguir o passo acima, porque voce ja esta em "Pedidos").
+
+LOCALIZANDO PEDIDOS:
+
+- Na secção "Localizar Pedidos".
+- Preencha o campo "Número do pedido; Protocolo de agendamento; ou ID. do fornecedor" e clique em "Procurar".
+- É possivel ver todos os registros clicando em "Ver todos".
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FORMULÁRIO DE "Notas FISCAIS":
+
+ATENÇÃO! - ESSE FORMULÁRIO SÓ PERMITE A CONSULTA DE DADOS.
+
+COMO ACESSAR A TABELA?
+
+- No canto superior esquerdo o item "Navegação" da acesso a classe "Registrar", selecione "Relação de NFs".
+(verifique se acima de "Navegação" não esta escrito "FAWS - Relação de NFs"
+caso esteja, não será possivel seguir o passo acima, porque voce ja esta em "Relação de NFs")
+
+LOCALIZANDO PEDIDOS:
+
+- Na secção "Localizar Relação de NFs".
+- Preencha o campo "Número da Nota; Número do pedido; ou ID. do fornecedor" e clique em "Procurar".
+- É possivel ver todos os registros clicando em "Ver todos".
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ENTENDENDO A SECÇÃO "CONTROLES"
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Botão Salvar dados:
+-Salva os dados dos campos acima da tabela, iniciando um novo cadastro no Banco de Dados.
+
+Botão Editar Dados:
+- Selecione uma linha na Tabela antes existente para utilizar o controle!
+- Permite editar os dados da linha selecionada na tabela para fazer a alterações. 
+- Selecione uma linha e clique no botão editar dados para que possam ser editados.
+
+Dica!
+-Selecione uma linha na tabela do cadastro que deseja alterar e clique duas vezes sobre o Botão para que possa ver os dados e fazer edições.
+
+Botão Salvar Alterações:
+- Permite salvar os campos modificados da linha
+- Após alterar os campos no qual deseja, clique em salvar alterações que o programa salvará todas as modificações.
+
+Botão Ativar/Inativar registro:
+- Selecione uma linha na Tabela antes existente para utilizar o controle!
+- Permite Ativar/Inativar o registro da linha selecionada.
+- Selecione uma linha na tabela e clique no botão Ativar/Inativar, para que o cadastro seja ativado ou inativado.
+
+Botão Cancelar:
+- Permite cancelar uma atividade que está sendo feita e pergunta ao usuário se deseja sair do formulário/programa.
+- Clique no botão para limpar todos os dados e se caso desejar sair da formulário/programa.
+
+Botão Menu:
+- Permite ao usuário acessar o Menu principal.
+-Clique no botão menu para acessar o Menu principal do programa.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
