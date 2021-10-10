@@ -413,7 +413,6 @@ namespace ProjetoIntegradoArmazem
             this.txtConsulta_Prod.Name = "txtConsulta_Prod";
             this.txtConsulta_Prod.Size = new System.Drawing.Size(341, 20);
             this.txtConsulta_Prod.TabIndex = 28;
-            this.txtConsulta_Prod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConsulta_Prod_KeyPress);
             // 
             // label24
             // 
@@ -963,7 +962,7 @@ namespace ProjetoIntegradoArmazem
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1263, 779);
-            this.MinimumSize = new System.Drawing.Size(1263, 779);
+            this.MinimumSize = new System.Drawing.Size(1263, 766);
             this.Name = "frminterfaceWMS_Armazem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WMS - Armazenagem";
