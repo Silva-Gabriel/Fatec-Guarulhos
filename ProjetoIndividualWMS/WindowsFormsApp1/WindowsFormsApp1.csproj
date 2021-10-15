@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexaoBD.cs" />
+    <Compile Include="DataGrid.cs" />
+    <Compile Include="ExeQuery.cs" />
     <Compile Include="InterfacePrincipal.cs">
       <SubType>Form</SubType>
     </Compile>

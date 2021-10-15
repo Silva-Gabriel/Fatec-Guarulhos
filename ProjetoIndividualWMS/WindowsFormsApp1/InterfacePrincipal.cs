@@ -15,6 +15,10 @@ namespace ProjetoIntegradoArmazem
 {
     public partial class frminterfaceWMS_Armazem : Form
     {
+        static ConexaoBD conexao = new ConexaoBD();
+        private static OleDbConnection conect = conexao.conexaoBD(conexao.StrConexao());
+        string SQL;
+
         //Marca d'água (Cuebanner)
         public frminterfaceWMS_Armazem()
         {
@@ -75,7 +79,6 @@ namespace ProjetoIntegradoArmazem
                 SendMessage(txts[i].Handle, 0x1501, (IntPtr)1, description[i]);
             }
         }
-        string caminho = Application.StartupPath + @"\BD\BDP2-WMSV2.mdb";
 
         //Alguns métodos
         public void Disable()
@@ -162,13 +165,12 @@ namespace ProjetoIntegradoArmazem
         }
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            conect.Close();
             try
             {
                 if (txtID_Endereco.Text != "" && txtNome_Prod.Text != "" && txtCodigo_Prod.Text != "" && txtCodigo_Ean.Text != "" && txtArea_Prod.Text != "" && txtCorredor.Text != "" && txtModulo.Text != "" && txtNivel.Text != "" && txtVao.Text != "" && txtEndereco_Prod.Text != "" && txtPeso_Prod.Text != "" && txtAltura_Prod.Text != "" && txtLargura_Prod.Text != "" && txtComprimento_Prod.Text != "" && txtVolume_Prod.Text != "" && txtStatus.Text != "" && txtFornecedor.Text != "" && txtQuantidade.Text != "" && txtLote.Text != "")
                 {
-                    string StrConnec = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + caminho;
-                    OleDbConnection connec = new OleDbConnection(StrConnec);
-                    connec.Open();
+                    conect.Open();
 
                     string nome_produto = txtNome_Prod.Text;
                     string Codigo_produto = txtCodigo_Prod.Text;
@@ -209,15 +211,12 @@ namespace ProjetoIntegradoArmazem
                                             "', lote = '" + lote +
                                             "+' WHERE ID_Endereco = '" + txtConsulta_Prod.Text + "'";
 
-                    OleDbCommand cmd = new OleDbCommand();
-                    cmd.Connection = connec;
-                    cmd.CommandText = cons;
-                    cmd.ExecuteNonQuery();
+                    ExeQuery exeQuery = new ExeQuery(conexao.StrConexao());
 
                     MessageBox.Show("Dados alterados com sucesso!", "FAWS WMS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearAll();
 
-                    connec.Close();
+                    conect.Close();
                 }
                 else
                 {
@@ -225,19 +224,17 @@ namespace ProjetoIntegradoArmazem
                 }
                 try
                 {
-                    string StrConnec = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + caminho;
-                    OleDbConnection con = new OleDbConnection(StrConnec);
-                    con.Open();
-                    OleDbCommand cmd = con.CreateCommand();
-                    cmd.CommandText = "SELECT * FROM Armazenagem";
-                    cmd.Connection = con;
-                    cmd.CommandType = CommandType.Text;
+                    conect.Open();
+                    OleDbCommand command = conect.CreateCommand();
+                    command.CommandText = "SELECT * FROM Armazenagem";
+                    command.Connection = conect;
+                    command.CommandType = CommandType.Text;
+
                     //adaptar dados pro DatatGrid 
-                    OleDbDataAdapter adapter = new OleDbDataAdapter(cmd);
-                    DataTable dados = new DataTable();
-                    adapter.Fill(dados);
-                    grdArmazem.DataSource = dados;
-                    con.Close();
+                    DataGrid newDtGrid = new DataGrid();
+                    newDtGrid.MostrarDados(command, grdArmazem);
+
+                    conect.Close();
                 }
                 catch (Exception error)
                 {
@@ -251,6 +248,7 @@ namespace ProjetoIntegradoArmazem
         }
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+            conect.Close();
             try
             {
                 if (txtID_Endereco.Text != "")
@@ -258,19 +256,14 @@ namespace ProjetoIntegradoArmazem
                     var result = MessageBox.Show("Tem certeza que deseja excluir todos os dados?", "FAWS", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                     if (result == DialogResult.Yes)
                     {
-                        string StrConnec = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + caminho;
-                        OleDbConnection connec = new OleDbConnection(StrConnec);
-                        connec.Open();
+                        conect.Open();
 
-                        String SQL;
                         SQL = "DELETE * FROM Armazenagem WHERE ID_endereco = '" + txtID_Endereco.Text + "'";
-                        OleDbCommand cmd = new OleDbCommand(SQL, connec);
-                        cmd.CommandText = SQL;
-                        cmd.ExecuteNonQuery();
+                        ExeQuery exeQuery = new ExeQuery(SQL);
 
                         ClearAll();
 
-                        connec.Close();
+                        conect.Close();
 
                         MessageBox.Show("Dados excluídos com sucesso", "FAWS WMS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
@@ -280,19 +273,18 @@ namespace ProjetoIntegradoArmazem
                     }
                     try
                     {
-                        string StrConnec = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + caminho;
-                        OleDbConnection con = new OleDbConnection(StrConnec);
-                        con.Open();
-                        OleDbCommand cmd = con.CreateCommand();
-                        cmd.CommandText = "SELECT * FROM Armazenagem";
-                        cmd.Connection = con;
-                        cmd.CommandType = CommandType.Text;
+                        conect.Open();
+
+                        OleDbCommand command = conect.CreateCommand();
+                        command.CommandText = "SELECT * FROM Armazenagem";
+                        command.Connection = conect;
+                        command.CommandType = CommandType.Text;
+
                         //adaptar dados pro DatatGrid 
-                        OleDbDataAdapter adapter = new OleDbDataAdapter(cmd);
-                        DataTable dados = new DataTable();
-                        adapter.Fill(dados);
-                        grdArmazem.DataSource = dados;
-                        con.Close();
+                        DataGrid newDtGrid = new DataGrid();
+                        newDtGrid.MostrarDados(command, grdArmazem);
+
+                        conect.Close();
                     }
                     catch (Exception error)
                     {
@@ -307,24 +299,18 @@ namespace ProjetoIntegradoArmazem
         }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            conect.Close();
             try
             {
-                
                 if (txtConsulta_Prod.Text != "")
-                {
-                    string StrConnec = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + caminho;
-                    OleDbConnection connec = new OleDbConnection(StrConnec);
-
-
-                    string consulta = "SELECT * FROM Armazenagem";
+               {
                     if (txtConsulta_Prod.Text != "")
-                        consulta = "SELECT * FROM Armazenagem WHERE ID_endereco LIKE '" + txtConsulta_Prod.Text + "'";
+                        SQL = "SELECT * FROM Armazenagem WHERE ID_endereco LIKE '" + txtConsulta_Prod.Text + "'" + " OR nome_produto LIKE '"+ txtConsulta_Prod.Text + "'";
 
                     DataTable dt = new DataTable();
-
-                    OleDbDataAdapter adpt = new OleDbDataAdapter(consulta, connec);
-
-                    connec.Open();
+                    OleDbDataAdapter adpt = new OleDbDataAdapter(SQL, conect);
+               
+                    conect.Open();
 
                     adpt.Fill(dt);
 
@@ -348,7 +334,7 @@ namespace ProjetoIntegradoArmazem
                     txtQuantidade.Text = (string)dt.Rows[0][17].ToString();
                     txtLote.Text = (string)dt.Rows[0][18];
 
-                    connec.Close();
+                    conect.Close();
                 }
                 else
                 {
@@ -375,25 +361,23 @@ namespace ProjetoIntegradoArmazem
         }
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-          
+            conect.Close();
             try
             {
                 if (txtID_Endereco.Text != "" && txtNome_Prod.Text != "" && txtCodigo_Prod.Text != "" && txtCodigo_Ean.Text != "" && txtArea_Prod.Text != "" && txtCorredor.Text != "" && txtModulo.Text != "" && txtNivel.Text != "" && txtVao.Text != "" && txtEndereco_Prod.Text != "" && txtPeso_Prod.Text != "" && txtAltura_Prod.Text != "" && txtLargura_Prod.Text != "" && txtComprimento_Prod.Text != "" && txtVolume_Prod.Text != "" && txtStatus.Text != "" && txtFornecedor.Text != "" && txtQuantidade.Text != "" && txtLote.Text != "")
                 {
-                    string StrConnec = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + caminho;
-                    OleDbConnection connec = new OleDbConnection(StrConnec);
-                    connec.Open();
-                    String SQL;
+                    conect.Open();
+                    
                     SQL = "Insert Into Armazenagem (ID_endereco, nome_produto, Codigo_produto, CodigoEan, area, corredor, modulo, nivel, vao, Endereco_produto, PesoBruto, altura_produto, largura_produto, comprimento_produto, volume_produto, status_produto, ID_fornecedor, quantidade, lote) Values";
                     SQL += "('" + txtID_Endereco.Text + "','" + txtNome_Prod.Text + "','" + txtCodigo_Prod.Text + "','" + txtCodigo_Ean.Text + "','" + txtArea_Prod.Text + "','" + txtCorredor.Text + "','" + txtModulo.Text + "','" + txtNivel.Text + "','" + txtVao.Text + "','" + txtEndereco_Prod.Text + "','" + txtPeso_Prod.Text + "','" + txtAltura_Prod.Text + "','" + txtLargura_Prod.Text + "','" + txtComprimento_Prod.Text + "','" + txtVolume_Prod.Text + "','" + txtStatus.Text.ToUpper() + "','" + txtFornecedor.Text + "','" + txtQuantidade.Text + "','" + txtLote.Text + "')";
 
-                    OleDbCommand cmd = new OleDbCommand(SQL, connec);
-                    cmd.ExecuteNonQuery();
+                    ExeQuery exeQuery = new ExeQuery(SQL);
+
                     MessageBox.Show("Dados gravados com sucesso!", "FAWS WMS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                     ClearAll();
 
-                    connec.Close();
+                    conect.Close();
                 }
                 else
                 {
@@ -409,19 +393,17 @@ namespace ProjetoIntegradoArmazem
             }
             try
             {
-                string StrConnec = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + caminho;
-                OleDbConnection con = new OleDbConnection(StrConnec);
-                con.Open();
-                OleDbCommand cmd = con.CreateCommand();
-                cmd.CommandText = "SELECT * FROM Armazenagem";
-                cmd.Connection = con;
-                cmd.CommandType = CommandType.Text;
+                conect.Open();
+                OleDbCommand command = conect.CreateCommand();
+                command.CommandText = "SELECT * FROM Armazenagem";
+                command.Connection = conect;
+                command.CommandType = CommandType.Text;
+
                 //adaptar dados pro DatatGrid 
-                OleDbDataAdapter adapter = new OleDbDataAdapter(cmd);
-                DataTable dados = new DataTable();
-                adapter.Fill(dados);
-                grdArmazem.DataSource = dados;
-                con.Close();
+                DataGrid newDtGrid = new DataGrid();
+                newDtGrid.MostrarDados(command, grdArmazem);
+              
+                conect.Close();
             }
             catch (Exception error)
             {
@@ -467,21 +449,20 @@ namespace ProjetoIntegradoArmazem
 
         private void btnMostrarDados_Click(object sender, EventArgs e)
         {
+            conect.Close();
             try
             {
-                string StrConnec = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + caminho;
-                OleDbConnection con = new OleDbConnection(StrConnec);
-                con.Open();
-                OleDbCommand cmd = con.CreateCommand();
-                cmd.CommandText = "SELECT * FROM Armazenagem";
-                cmd.Connection = con;
-                cmd.CommandType = CommandType.Text;
+                conect.Open();
+                OleDbCommand command = conect.CreateCommand();
+                command.CommandText = "SELECT * FROM Armazenagem";
+                command.Connection = conect;
+                command.CommandType = CommandType.Text;
+
                 //adaptar dados pro DatatGrid 
-                OleDbDataAdapter adapter = new OleDbDataAdapter(cmd);
-                DataTable dados = new DataTable();
-                adapter.Fill(dados);
-                grdArmazem.DataSource = dados;
-                con.Close();
+                DataGrid newDtGrid = new DataGrid();
+                newDtGrid.MostrarDados(command, grdArmazem);
+
+                conect.Close();
             }
             catch (Exception error)
             {
@@ -663,33 +644,25 @@ namespace ProjetoIntegradoArmazem
 
         private void txtConsulta_Prod_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsNumber(e.KeyChar) || char.IsControl(e.KeyChar)))
-            {
-                e.Handled = true;
-                MessageBox.Show("Este campo aceita apenas números", "FAWS WMS", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
         }
 
         private void grdArmazem_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            conect.Close();
             if (grdArmazem.CurrentCell.ColumnIndex == 0)
             {
                 txtID_Endereco.Text = Convert.ToString(grdArmazem.CurrentCell.Value);
             }
             try
             {
-                string StrConnec = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = " + caminho;
-                OleDbConnection connec = new OleDbConnection(StrConnec);
-
-
-                string consulta = "SELECT * FROM Armazenagem";
-                consulta = "SELECT * FROM Armazenagem WHERE ID_endereco LIKE '" + txtID_Endereco.Text + "'";
+                SQL = "SELECT * FROM Armazenagem WHERE ID_endereco LIKE '" + txtID_Endereco.Text + "'";
 
                 DataTable dt = new DataTable();
 
-                OleDbDataAdapter adpt = new OleDbDataAdapter(consulta, connec);
+                
+                OleDbDataAdapter adpt = new OleDbDataAdapter(SQL, conect);
 
-                connec.Open();
+                conect.Open();
 
                 adpt.Fill(dt);
 
@@ -713,7 +686,7 @@ namespace ProjetoIntegradoArmazem
                 txtQuantidade.Text = (string)dt.Rows[0][17].ToString();
                 txtLote.Text = (string)dt.Rows[0][18];
 
-                connec.Close();
+                conect.Close();
             }
             catch(Exception erro)
             {
@@ -726,7 +699,6 @@ namespace ProjetoIntegradoArmazem
             if(result == DialogResult.No)
             {
                 e.Cancel = true;
-                return;
             }
         }
     }

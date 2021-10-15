@@ -74,3 +74,15 @@ C:\Users\cliente\Desktop\Exercicios\Nova pasta\ProjetoIntegradoWMS\WindowsFormsA
 C:\Users\cliente\Desktop\Exercicios\Nova pasta\ProjetoIntegradoWMS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\cliente\Desktop\Exercicios\Nova pasta\ProjetoIntegradoWMS\WindowsFormsApp1\obj\Debug\InterfaceWMS_Armazem.exe
 C:\Users\cliente\Desktop\Exercicios\Nova pasta\ProjetoIntegradoWMS\WindowsFormsApp1\obj\Debug\InterfaceWMS_Armazem.pdb
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\obj\Debug\ProjetoIntegradoArmazem.frminterfaceWMS_Armazem.resources
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\obj\Debug\ProjetoIntegradoArmazem.frmSuporteAoUsuario.resources
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\obj\Debug\ProjetoIntegradoArmazem.frmMapa.resources
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\obj\Debug\ProjetoIntegradoArmazem.Properties.Resources.resources
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\obj\Debug\InterfaceWMS_Armazem.exe
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\obj\Debug\InterfaceWMS_Armazem.pdb
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\bin\Debug\InterfaceWMS_Armazem.exe.config
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\bin\Debug\InterfaceWMS_Armazem.exe
+C:\GITHUB\Fatec-Guarulhos\ProjetoIndividualWMS\WindowsFormsApp1\bin\Debug\InterfaceWMS_Armazem.pdb
